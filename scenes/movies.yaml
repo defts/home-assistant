@@ -1,0 +1,6 @@
+- name: Movie
+  entities:
+    light.lampadaire_salon:
+      state: on
+      color_name: 'blue'
+      brightness: 160

@@ -1,0 +1,6 @@
+bureau:
+  name: Bureau
+  view: yes
+  entities:
+    - light.lampe_bureau
+

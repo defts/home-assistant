@@ -1,0 +1,21 @@
+sensor.owm_temperature:
+  friendly_name: Temperature
+sensor.owm_humidity:
+  friendly_name: Humidité
+  icon: mdi:water-percent
+sensor.owm_rain:
+  friendly_name: Pluie
+  icon: mdi:weather-rainy
+sensor.owm_cloud_coverage:
+  friendly_name: Nuage
+  icon: mdi:weather-cloudy
+sensor.owm_wind_speed:
+  friendly_name: Vitesse vent
+  icon: mdi:weather-windy
+sensor.owm_snow:
+  friendly_name: Neige
+  icon: mdi:weather-snowy
+sensor.owm_pressure:
+  friendly_name: Pression
+  icon: mdi:nest-thermostat
+

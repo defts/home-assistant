@@ -1,0 +1,8 @@
+- name: Wake Up
+  entities:
+    light.boule:
+      state: on
+      rgb_color: [221,167,79]
+      brightness: 150
+      transition: 30
+

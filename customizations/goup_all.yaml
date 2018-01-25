@@ -1,0 +1,12 @@
+group.all_automations:
+  friendly_name: Automatisations et Notifications
+  hidden: false
+group.all_covers:
+  friendly_name: Volets
+  hidden: false
+group.all_devices:
+  friendly_name: Devices
+  hidden: false
+group.all_lights:
+  friendly_name: Lumières
+  hidden: false

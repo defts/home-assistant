@@ -1,0 +1,45 @@
+- id: notif-hassio-startup
+  alias: Notification on Hassio Startup
+  trigger:
+    - platform: homeassistant
+      event: start
+  action:
+    - service: notify.notifier
+      data:
+        title: "Home Assistant"
+        message: "Started"
+
+- id: notif-hassio-shutdown
+  alias: Notification on Hassio Shutdown
+  trigger:
+    - platform: homeassistant
+      event: shutdown
+  action:
+    - service: notify.notifier
+      data:
+        title: "Home Assistant"
+        message: "Shutdown"
+
+- id: notif-hassio-update
+  alias: Notification on Hassio Update
+  trigger:
+    - platform: state
+      entity_id: updater.updater
+  action:
+    - service: notify.notifier
+      data:
+        title: "Home Assistant"
+        message: "Update Available"
+
+- id: notif-hassio-login-failed
+  alias: Login Failure
+  hide_entity: True
+  trigger:
+    - platform: template
+      value_template: "{{ states('persistent_notification.httplogin') != 'authentication' }}"
+  action:
+    - service: notify.notifier
+      data:
+        title: "Home Assistant"
+        message: "Login failed on your home assistant"
+

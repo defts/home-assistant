@@ -1,0 +1,6 @@
+all_scenes:
+  name: Scènes
+  entities:
+    - scene.movie
+    - scene.wake_up
+

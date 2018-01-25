@@ -1,0 +1,31 @@
+- id: automation-wake-up
+  alias: 'Automation for wake up'
+  trigger:
+    - platform: time
+      at: !secret automation_week_wakeup_hour
+    - platform: time
+      at: !secret automation_weekend_wakeup_hour
+  condition:
+    - condition: or
+      conditions:
+        - condition: time
+          after: !secret automation_week_wakeup_hour
+          weekday:
+            - mon
+            - tue
+            - wed
+            - thu
+            - fri
+        - condition: time
+          after: !secret automation_weekend_wakeup_hour
+          weekday:
+            - sat
+            - sun
+  action:
+    - service: notify.notifier
+      data:
+        title: "Home Assistant - Automation"
+        message: "Wake Up"
+    - service: scene.turn_on
+      entity_id: scene.wake_up
+

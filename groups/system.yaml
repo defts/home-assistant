@@ -1,0 +1,28 @@
+SystemView:
+  name: System
+  view: yes
+  entities:
+    - automation.login_failure
+    - automation.notification_on_hassio_shutdown
+    - automation.notification_on_hassio_startup
+    - automation.notification_on_hassio_update
+    - group.systemmonitor
+    - group.speedtest
+
+SystemMonitor:
+  - sensor.disk_used_
+  - sensor.sent_eth0
+  - sensor.received_eth0
+  - sensor.ram_available
+  - sensor.average_load_1m
+  - sensor.average_load_5m
+  - sensor.average_load_15m
+  - sensor.cpu_used
+  - sensor.ipv4_address_eth0
+  - sensor.last_boot
+    
+Speedtest:
+  - sensor.speedtest_ping
+  - sensor.speedtest_download
+  - sensor.speedtest_upload
+

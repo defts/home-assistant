@@ -1,0 +1,6 @@
+chambre:
+  name: Chambre
+  view: yes
+  entities:
+    - light.boule
+

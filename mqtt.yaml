@@ -1,0 +1,3 @@
+broker: core-mosquitto
+username: hassio
+password: !secret mqtt_password

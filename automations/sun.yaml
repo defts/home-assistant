@@ -1,0 +1,21 @@
+- id: notif-sun-rises
+  alias: 'Notification on sun rises'
+  trigger:
+    - platform: sun
+      event: sunrise
+  action:
+    - service: notify.notifier
+      data:
+        title: 'Home Assistant - Sun'
+        message: 'The sun is up!'
+
+- id: notif-sun-sets
+  alias: 'Notification on sun sets'
+  trigger:
+    - platform: sun
+      event: sunset
+  action:
+    - service: notify.notifier
+      data:
+        title: 'Home Assistant - Sun'
+        message: 'The sun is down.'

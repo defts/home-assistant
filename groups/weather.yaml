@@ -1,0 +1,27 @@
+weather:
+  view: yes
+  icon: mdi:temperature-celsius
+  name: Weather
+  entities:
+   - automation.notification_on_sun_rises
+   - automation.notification_on_sun_sets
+   - group.sun
+   - group.weather_condition
+
+Sun:
+  entities:
+    - sun.sun
+    - sensor.yr_symbol
+
+Weather Condition:
+   entities:
+    - sensor.owm_temperature
+    - sensor.owm_condition
+    - sensor.owm_cloud_coverage
+    - sensor.owm_rain
+    - sensor.owm_humidity
+    - sensor.owm_pressure
+    - sensor.owm_snow
+    - sensor.owm_wind_speed
+    - camera.France
+

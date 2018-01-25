@@ -1,0 +1,70 @@
+- id: automation-roller-open-morning
+  alias: 'Automation for roller on morning'
+  trigger:
+    - platform: sun
+      event: sunrise
+    - platform: time
+      at: !secret automation_week_wakeup_hour
+    - platform: time
+      at: !secret automation_weekend_wakeup_hour
+  condition:
+    - condition: and
+      conditions:
+        - condition: sun
+          after: sunrise
+        - condition: state
+          entity_id: cover.volet_salon_level
+          state: 'closed'
+        - condition: or
+          conditions:
+            - condition: time
+              after: !secret automation_week_wakeup_hour
+              weekday:
+                - mon
+                - tue
+                - wed
+                - thu
+                - fri
+            - condition: time
+              after: !secret automation_weekend_wakeup_hour
+              weekday:
+                - sat
+                - sun
+  action:
+    - service: cover.set_cover_position
+      data:
+         entity_id: cover.volet_salon_level
+         position: 30
+    - service: notify.notifier
+      data:
+        title: "Home Assistant - Automation"
+        message: "Roller opened"
+    - delay: '00:10:00'
+    - condition: template
+      value_template: '{{ states.cover.volet_salon_level.attributes.current_position == 30 }}'
+    - service: cover.open_cover
+      data:
+         entity_id: cover.volet_salon_level
+
+
+- id: automation-roller-close
+  alias: 'Automation for roller on evening'
+  trigger:
+    - platform: sun
+      event: sunset
+  action:
+    - service: cover.set_cover_position
+      data:
+         entity_id: cover.volet_salon_level
+         position: 30
+    - service: notify.notifier
+      data:
+        title: "Home Assistant - Automation"
+        message: "Roller closed"
+    - delay: '00:10:00'
+    - condition: template
+      value_template: '{{ states.cover.volet_salon_level.attributes.current_position == 30 }}'
+    - service: cover.close_cover
+      data:
+         entity_id: cover.volet_salon_level
+

@@ -1,0 +1,4 @@
+sensor.living_room_thermostat_humidity:
+  friendly_name: Humidité
+sensor.living_room_thermostat_temperature:
+  friendly_name: Température

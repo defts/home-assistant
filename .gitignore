@@ -1,0 +1,15 @@
+.HA_VERSION
+.uuid
+OZW_Log.txt
+fitbit.conf
+home-assistant.log
+home-assistant_v2.db
+known_devices.yaml
+nest.conf
+options.xml
+phue.conf
+pyozw.sqlite
+secrets.yaml
+zwcfg_0xceea7ae4.xml
+zwscene.xml
+

@@ -1,0 +1,6 @@
+binary_sensor.sony_tv_status:
+  friendly_name: TV Sony
+  icon: mdi:television
+binary_sensor.pc_desk:
+  friendly_name: Computer
+  icon: mdi:desktop-tower

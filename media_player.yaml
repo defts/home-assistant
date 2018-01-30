@@ -1,2 +1,4 @@
 - platform: cast
   host: !secret ip_google_chromecast
+- platform: liveboxplaytv
+  host: !secret ip_liveboxtv

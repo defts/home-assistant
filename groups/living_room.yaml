@@ -2,13 +2,15 @@ salon:
   name: Salon
   view: yes
   entities:
-    - automation.notification_when_nest_goes_to_eco_mode
-    - automation.notification_when_nest_goes_to_heat_mode
     - automation.automation_for_roller_on_evening
     - automation.automation_for_roller_on_morning
-    - light.lampadaire_salon
+    - automation.notification_when_nest_goes_to_eco_mode
+    - automation.notification_when_nest_goes_to_heat_mode
+    - binary_sensor.sony_tv_status
     - cover.volet_salon_level
     - climate.living_room
+    - light.lampadaire_salon
+    - media_player.livebox_play_tv
     - media_player.tele_
     - media_player.salon
     - sensor.living_room_thermostat_humidity

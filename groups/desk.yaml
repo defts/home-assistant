@@ -3,4 +3,5 @@ bureau:
   view: yes
   entities:
     - light.lampe_bureau
+    - binary_sensor.pc_desk
 

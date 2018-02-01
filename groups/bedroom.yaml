@@ -2,5 +2,7 @@ chambre:
   name: Chambre
   view: yes
   entities:
+    - sensor.humidity_158d000227cc0b
+    - sensor.temperature_158d000227cc0b
     - light.boule
 

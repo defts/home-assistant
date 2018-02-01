@@ -6,6 +6,7 @@ SystemView:
     - automation.notification_on_hassio_shutdown
     - automation.notification_on_hassio_startup
     - automation.notification_on_hassio_update
+    - group.batteries
     - group.systemmonitor
     - group.speedtest
 

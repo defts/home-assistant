@@ -1,0 +1,9 @@
+Batteries:
+   name: Batteries
+   entities:
+    - sensor.xiaomi_158d0001b91beb_battery
+    - sensor.xiaomi_158d000223a2af_battery
+    - sensor.xiaomi_158d000227cc0b_battery
+    - sensor.xiaomi_158d0001debb0d_battery
+    - sensor.charge_2_battery
+

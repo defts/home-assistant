@@ -6,6 +6,8 @@ salon:
     - automation.automation_for_roller_on_morning
     - automation.notification_when_nest_goes_to_eco_mode
     - automation.notification_when_nest_goes_to_heat_mode
+    - binary_sensor.door_window_sensor_158d0001b91beb
+    - binary_sensor.door_window_sensor_158d0001debb0d
     - binary_sensor.sony_tv_status
     - cover.volet_salon_level
     - climate.living_room

@@ -1,3 +1,5 @@
 cover.volet_salon_level:
-  friendly_name: Volet Salon
+  friendly_name: Volet salon
+cover.volet_bureau_level:
+  friendly_name: Volet bureau
 

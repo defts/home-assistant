@@ -33,7 +33,9 @@
   action:
     - service: cover.set_cover_position
       data:
-         entity_id: cover.volet_salon_level
+         entity_id: 
+           - cover.volet_salon_level
+           - cover.volet_bureau_level
          position: 30
     - service: notify.notifier
       data:
@@ -44,7 +46,9 @@
       value_template: '{{ states.cover.volet_salon_level.attributes.current_position == 30 }}'
     - service: cover.open_cover
       data:
-         entity_id: cover.volet_salon_level
+         entity_id: 
+           - cover.volet_salon_level
+           - cover.volet_bureau_level
 
 
 - id: automation-roller-close
@@ -55,7 +59,9 @@
   action:
     - service: cover.set_cover_position
       data:
-         entity_id: cover.volet_salon_level
+         entity_id: 
+           - cover.volet_salon_level
+           - cover.volet_bureau_level
          position: 30
     - service: notify.notifier
       data:
@@ -66,5 +72,7 @@
       value_template: '{{ states.cover.volet_salon_level.attributes.current_position == 30 }}'
     - service: cover.close_cover
       data:
-         entity_id: cover.volet_salon_level
+         entity_id: 
+           - cover.volet_salon_level
+           - cover.volet_bureau_level
 

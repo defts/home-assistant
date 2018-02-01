@@ -2,6 +2,7 @@ bureau:
   name: Bureau
   view: yes
   entities:
-    - light.lampe_bureau
     - binary_sensor.pc_desk
+    - cover.volet_bureau_level
+    - light.lampe_bureau
 

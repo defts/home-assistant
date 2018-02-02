@@ -89,7 +89,6 @@
           n/a
         {%- endif -%}
       unit_of_measurement: '%'
-      entity_id: sensor.temperature_158d000223a2af
     xiaomi_158d000227cc0b_battery:
       friendly_name: "Battery"
       value_template: >-
@@ -99,7 +98,6 @@
           n/a
         {%- endif -%}
       unit_of_measurement: '%'
-      entity_id: sensor.temperature_158d000227cc0b
     xiaomi_158d0001b91beb_battery:
       friendly_name: "Battery"
       value_template: >-
@@ -109,7 +107,6 @@
           n/a
         {%- endif -%}
       unit_of_measurement: '%'
-      entity_id: binary_sensor.door_window_sensor_158d0001b91beb
     xiaomi_158d0001debb0d_battery:
       friendly_name: "Battery"
       value_template: >-
@@ -119,5 +116,4 @@
           n/a
         {%- endif -%}
       unit_of_measurement: '%'
-      entity_id: binary_sensor.door_window_sensor_158d0001debb0d
 

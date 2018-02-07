@@ -1,0 +1,7 @@
+temperatures:
+  hours_to_show: 168
+  entities:
+    - sensor.owm_temperature
+    - sensor.living_room_thermostat_temperature
+    - sensor.temperature_158d000223a2af
+    - sensor.temperature_158d000227cc0b

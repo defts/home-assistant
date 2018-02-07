@@ -24,6 +24,7 @@ binary_sensor: !include binary_sensor.yaml
 camera: !include camera.yaml
 device_tracker: !include device_tracker.yaml
 group: !include_dir_merge_named groups
+history_graph: !include history_graph.yaml
 http: !include http.yaml
 logger: !include logger.yaml
 media_player: !include media_player.yaml

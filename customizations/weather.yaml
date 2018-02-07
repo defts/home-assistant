@@ -1,5 +1,5 @@
 sensor.owm_temperature:
-  friendly_name: Temperature
+  friendly_name: Outdoor Temperature
 sensor.owm_humidity:
   friendly_name: Humidité
   icon: mdi:water-percent

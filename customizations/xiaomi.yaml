@@ -3,10 +3,10 @@ binary_sensor.door_window_sensor_158d0001b91beb:
 binary_sensor.door_window_sensor_158d0001debb0d:
   friendly_name: Front Door 
 sensor.humidity_158d000223a2af:
-  friendly_name: Humidity
+  friendly_name: Desk Humidity
 sensor.temperature_158d000223a2af:
-  friendly_name: Temperature
+  friendly_name: Desk Temperature
 sensor.humidity_158d000227cc0b:
-  friendly_name: Humidity
+  friendly_name: Bedroom Humidity
 sensor.temperature_158d000227cc0b:
-  friendly_name: Temperature
+  friendly_name: Bedroom Temperature

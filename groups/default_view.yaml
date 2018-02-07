@@ -2,11 +2,11 @@ default_view:
   view: yes
   name: All
   entities:
+    - device_tracker.hassio_pixel
     - group.all_lights
     - group.all_covers
     - group.all_devices
     - group.all_automations
-    - device_tracker.hassio_pixel
     - group.all_scenes
-
+    - history_graph.temperatures
 

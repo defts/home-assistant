@@ -10,6 +10,7 @@
       conditions:
         - condition: time
           after: !secret automation_week_wakeup_hour
+          before: !secret automation_weekend_wakeup_hour
           weekday:
             - mon
             - tue

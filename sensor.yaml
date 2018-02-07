@@ -81,7 +81,7 @@
 - platform: template
   sensors:
     xiaomi_158d000223a2af_battery:
-      friendly_name: "Battery"
+      friendly_name: "Battery Desk Temp"
       value_template: >-
         {%- if states.sensor.temperature_158d000223a2af -%}
           {{ states.sensor.temperature_158d000223a2af.attributes.battery_level }}
@@ -90,7 +90,7 @@
         {%- endif -%}
       unit_of_measurement: '%'
     xiaomi_158d000227cc0b_battery:
-      friendly_name: "Battery"
+      friendly_name: "Battery Bedroom Temp"
       value_template: >-
         {%- if states.sensor.temperature_158d000227cc0b -%}
           {{ states.sensor.temperature_158d000227cc0b.attributes.battery_level }}
@@ -99,7 +99,7 @@
         {%- endif -%}
       unit_of_measurement: '%'
     xiaomi_158d0001b91beb_battery:
-      friendly_name: "Battery"
+      friendly_name: "Battery Exterior Door"
       value_template: >-
         {%- if states.binary_sensor.door_window_sensor_158d0001b91beb -%}
           {{ states.binary_sensor.door_window_sensor_158d0001b91beb.attributes.battery_level }}
@@ -108,7 +108,7 @@
         {%- endif -%}
       unit_of_measurement: '%'
     xiaomi_158d0001debb0d_battery:
-      friendly_name: "Battery"
+      friendly_name: "Battery Front Door"
       value_template: >-
         {%- if states.binary_sensor.door_window_sensor_158d0001debb0d -%}
           {{ states.binary_sensor.door_window_sensor_158d0001debb0d.attributes.battery_level }}

@@ -89,6 +89,28 @@
           n/a
         {%- endif -%}
       unit_of_measurement: '%'
+      icon_template: >-
+        {% if states.sensor.temperature_158d000223a2af.attributes.battery_level <= 10 %}
+          mdi:battery-10
+        {% elif states.sensor.temperature_158d000223a2af.attributes.battery_level <= 20 %}
+          mdi:battery-20
+        {% elif states.sensor.temperature_158d000223a2af.attributes.battery_level <= 30 %}
+          mdi:battery-30
+        {% elif states.sensor.temperature_158d000223a2af.attributes.battery_level <= 40 %}
+          mdi:battery-40
+        {% elif states.sensor.temperature_158d000223a2af.attributes.battery_level <= 50 %}
+          mdi:battery-50
+        {% elif states.sensor.temperature_158d000223a2af.attributes.battery_level <= 60 %}
+          mdi:battery-60
+        {% elif states.sensor.temperature_158d000223a2af.attributes.battery_level <= 70 %}
+          mdi:battery-70
+        {% elif states.sensor.temperature_158d000223a2af.attributes.battery_level <= 80 %}
+          mdi:battery-80
+        {% elif states.sensor.temperature_158d000223a2af.attributes.battery_level <= 90 %}
+          mdi:battery-90
+        {% else %}
+          mdi:battery
+        {% endif %}
     xiaomi_158d000227cc0b_battery:
       friendly_name: "Battery Bedroom Temp"
       value_template: >-
@@ -98,6 +120,28 @@
           n/a
         {%- endif -%}
       unit_of_measurement: '%'
+      icon_template: >-
+        {% if states.sensor.temperature_158d000227cc0b.attributes.battery_level <= 10 %}
+          mdi:battery-10
+        {% elif states.sensor.temperature_158d000227cc0b.attributes.battery_level <= 20 %}
+          mdi:battery-20
+        {% elif states.sensor.temperature_158d000227cc0b.attributes.battery_level <= 30 %}
+          mdi:battery-30
+        {% elif states.sensor.temperature_158d000227cc0b.attributes.battery_level <= 40 %}
+          mdi:battery-40
+        {% elif states.sensor.temperature_158d000227cc0b.attributes.battery_level <= 50 %}
+          mdi:battery-50
+        {% elif states.sensor.temperature_158d000227cc0b.attributes.battery_level <= 60 %}
+          mdi:battery-60
+        {% elif states.sensor.temperature_158d000227cc0b.attributes.battery_level <= 70 %}
+          mdi:battery-70
+        {% elif states.sensor.temperature_158d000227cc0b.attributes.battery_level <= 80 %}
+          mdi:battery-80
+        {% elif states.sensor.temperature_158d000227cc0b.attributes.battery_level <= 90 %}
+          mdi:battery-90
+        {% else %}
+          mdi:battery
+        {% endif %}
     xiaomi_158d0001b91beb_battery:
       friendly_name: "Battery Exterior Door"
       value_template: >-
@@ -107,6 +151,28 @@
           n/a
         {%- endif -%}
       unit_of_measurement: '%'
+      icon_template: >-
+        {% if states.binary_sensor.door_window_sensor_158d0001b91beb.attributes.battery_level <= 10 %}
+          mdi:battery-10
+        {% elif states.binary_sensor.door_window_sensor_158d0001b91beb.attributes.battery_level <= 20 %}
+          mdi:battery-20
+        {% elif states.binary_sensor.door_window_sensor_158d0001b91beb.attributes.battery_level <= 30 %}
+          mdi:battery-30
+        {% elif states.binary_sensor.door_window_sensor_158d0001b91beb.attributes.battery_level <= 40 %}
+          mdi:battery-40
+        {% elif states.binary_sensor.door_window_sensor_158d0001b91beb.attributes.battery_level <= 50 %}
+          mdi:battery-50
+        {% elif states.binary_sensor.door_window_sensor_158d0001b91beb.attributes.battery_level <= 60 %}
+          mdi:battery-60
+        {% elif states.binary_sensor.door_window_sensor_158d0001b91beb.attributes.battery_level <= 70 %}
+          mdi:battery-70
+        {% elif states.binary_sensor.door_window_sensor_158d0001b91beb.attributes.battery_level <= 80 %}
+          mdi:battery-80
+        {% elif states.binary_sensor.door_window_sensor_158d0001b91beb.attributes.battery_level <= 90 %}
+          mdi:battery-90
+        {% else %}
+          mdi:battery
+        {% endif %}
     xiaomi_158d0001debb0d_battery:
       friendly_name: "Battery Front Door"
       value_template: >-
@@ -116,4 +182,26 @@
           n/a
         {%- endif -%}
       unit_of_measurement: '%'
+      icon_template: >-
+        {% if states.binary_sensor.door_window_sensor_158d0001debb0d.attributes.battery_level <= 10 %}
+          mdi:battery-10
+        {% elif states.binary_sensor.door_window_sensor_158d0001debb0d.attributes.battery_level <= 20 %}
+          mdi:battery-20
+        {% elif states.binary_sensor.door_window_sensor_158d0001debb0d.attributes.battery_level <= 30 %}
+          mdi:battery-30
+        {% elif states.binary_sensor.door_window_sensor_158d0001debb0d.attributes.battery_level <= 40 %}
+          mdi:battery-40
+        {% elif states.binary_sensor.door_window_sensor_158d0001debb0d.attributes.battery_level <= 50 %}
+          mdi:battery-50
+        {% elif states.binary_sensor.door_window_sensor_158d0001debb0d.attributes.battery_level <= 60 %}
+          mdi:battery-60
+        {% elif states.binary_sensor.door_window_sensor_158d0001debb0d.attributes.battery_level <= 70 %}
+          mdi:battery-70
+        {% elif states.binary_sensor.door_window_sensor_158d0001debb0d.attributes.battery_level <= 80 %}
+          mdi:battery-80
+        {% elif states.binary_sensor.door_window_sensor_158d0001debb0d.attributes.battery_level <= 90 %}
+          mdi:battery-90
+        {% else %}
+          mdi:battery
+        {% endif %}
 

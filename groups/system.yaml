@@ -11,14 +11,15 @@ SystemView:
     - group.speedtest
 
 SystemMonitor:
-  - sensor.disk_used_
-  - sensor.sent_eth0
+  - sensor.disk_use_percent_
+  - sensor.network_in_eth0
+  - sensor.network_out_eth0
   - sensor.received_eth0
-  - sensor.ram_available
-  - sensor.average_load_1m
-  - sensor.average_load_5m
-  - sensor.average_load_15m
-  - sensor.cpu_used
+  - sensor.memory_free
+  - sensor.load_1m
+  - sensor.load_5m
+  - sensor.load_15m
+  - sensor.processor_use
   - sensor.ipv4_address_eth0
   - sensor.last_boot
     

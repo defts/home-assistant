@@ -2,3 +2,5 @@
   max_gps_accuracy: 200
   waypoints: True
   mqtt_topic: "owntracks/#"
+- platform: gpslogger
+  password: !secret gpslogger_password

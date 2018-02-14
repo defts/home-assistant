@@ -6,4 +6,5 @@ Batteries:
     - sensor.xiaomi_158d000227cc0b_battery
     - sensor.xiaomi_158d0001debb0d_battery
     - sensor.charge_2_battery
+    - sensor.phue_hue_dimmer_switch_1_battery
 

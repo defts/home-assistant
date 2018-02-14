@@ -1,3 +1,5 @@
+- platform: hue
+
 - platform: speedtest
   minute:
     - 0
@@ -200,6 +202,37 @@
         {% elif states.binary_sensor.door_window_sensor_158d0001debb0d.attributes.battery_level <= 80 %}
           mdi:battery-80
         {% elif states.binary_sensor.door_window_sensor_158d0001debb0d.attributes.battery_level <= 90 %}
+          mdi:battery-90
+        {% else %}
+          mdi:battery
+        {% endif %}
+    phue_hue_dimmer_switch_1_battery:
+      friendly_name: "Hue dimmer switch 1"
+      value_template: >-
+        {%- if states.sensor.hue_dimmer_switch_1 -%}
+          {{ states.sensor.hue_dimmer_switch_1.attributes.battery }}
+        {%- else -%}
+          n/a
+        {%- endif -%}
+      unit_of_measurement: '%'
+      icon_template: >-
+        {% if states.sensor.hue_dimmer_switch_1.attributes.battery <= 10 %}
+          mdi:battery-10
+        {% elif states.sensor.hue_dimmer_switch_1.attributes.battery <= 20 %}
+          mdi:battery-20
+        {% elif states.sensor.hue_dimmer_switch_1.attributes.battery <= 30 %}
+          mdi:battery-30
+        {% elif states.sensor.hue_dimmer_switch_1.attributes.battery <= 40 %}
+          mdi:battery-40
+        {% elif states.sensor.hue_dimmer_switch_1.attributes.battery <= 50 %}
+          mdi:battery-50
+        {% elif states.sensor.hue_dimmer_switch_1.attributes.battery <= 60 %}
+          mdi:battery-60
+        {% elif states.sensor.hue_dimmer_switch_1.attributes.battery <= 70 %}
+          mdi:battery-70
+        {% elif states.sensor.hue_dimmer_switch_1.attributes.battery <= 80 %}
+          mdi:battery-80
+        {% elif states.sensor.hue_dimmer_switch_1.attributes.battery <= 90 %}
           mdi:battery-90
         {% else %}
           mdi:battery

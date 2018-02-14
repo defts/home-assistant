@@ -1,0 +1,6 @@
+covers:
+  name: Volets
+  entities:
+    - cover.volet_bureau_level
+    - cover.volet_salon_level
+

@@ -1,0 +1,6 @@
+devices:
+  name: Devices
+  entities:
+    - device_tracker.hassio_elo_iphone
+    - device_tracker.fa77m0304038
+

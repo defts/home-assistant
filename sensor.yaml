@@ -79,9 +79,9 @@
     - "sleep/timeInBed"
 
 
-## Bateries
 - platform: template
   sensors:
+    ## Bateries
     xiaomi_158d000223a2af_battery:
       friendly_name: "Battery Desk Temp"
       value_template: >-
@@ -238,3 +238,18 @@
           mdi:battery
         {% endif %}
 
+    # Sum power
+    total_power_livingroom:
+      friendly_name: 'Living room power'
+      value_template: '{{ ((states.sensor.volet_salon_power.attributes.power_consumption | float) + 
+      (states.sensor.livingroom_light_power.attributes.power_consumption | float)) }}'
+      unit_of_measurement: 'W'
+    total_power_desk:
+      friendly_name: 'Desk power'
+      value_template: '{{ ((states.sensor.volet_bureau_power.attributes.power_consumption | float)) }}'
+      unit_of_measurement: 'W'
+    total_power_home:
+      friendly_name: 'Home power'
+      value_template: '{{ ((states.sensor.total_power_livingroom.state | float) + 
+      (states.sensor.total_power_desk.state | float)) }}'
+      unit_of_measurement: 'W'

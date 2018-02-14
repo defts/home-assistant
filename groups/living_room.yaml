@@ -11,10 +11,12 @@ salon:
     - binary_sensor.sony_tv_status
     - cover.volet_salon_level
     - climate.living_room
+    - light.livingroom_light_level
     - light.lampadaire_salon
     - media_player.livebox_play_tv
     - media_player.tele_
     - media_player.salon
+    - sensor.total_power_livingroom
     - sensor.living_room_thermostat_humidity
     - sensor.living_room_thermostat_temperature
 

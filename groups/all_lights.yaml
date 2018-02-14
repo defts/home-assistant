@@ -1,4 +1,4 @@
-all_lights:
+lights:
   name: Lumières
   entities:
     - light.boule
@@ -6,4 +6,5 @@ all_lights:
     - light.lampe
     - light.lampe_bureau
     - light.lampadaire_salon
+    - light.livingroom_light_level
 

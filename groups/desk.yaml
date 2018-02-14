@@ -5,6 +5,7 @@ bureau:
     - binary_sensor.pc_desk
     - cover.volet_bureau_level
     - light.lampe_bureau
+    - sensor.total_power_desk
     - sensor.humidity_158d000223a2af
     - sensor.temperature_158d000223a2af
 

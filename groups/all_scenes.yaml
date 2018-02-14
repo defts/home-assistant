@@ -1,4 +1,4 @@
-all_scenes:
+scenes:
   name: Scènes
   entities:
     - scene.movie

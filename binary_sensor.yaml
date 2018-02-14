@@ -1,6 +1,7 @@
 - platform: ping
   host: !secret ip_sony_tv
-  scan_interval: 10
+  count: 2
+  scan_interval: 3
   name: sony_tv_status
 
 - platform: ping

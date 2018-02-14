@@ -1,0 +1,9 @@
+all_lights:
+  name: Lumières
+  entities:
+    - light.boule
+    - light.lampe_2
+    - light.lampe
+    - light.lampe_bureau
+    - light.lampadaire_salon
+

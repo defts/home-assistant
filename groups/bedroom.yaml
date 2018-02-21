@@ -1,4 +1,4 @@
-chambre:
+bedroom:
   name: Chambre
   view: yes
   entities:

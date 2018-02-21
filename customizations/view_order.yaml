@@ -1,14 +1,14 @@
 group.default_vew:
  order: 1
-group.salon:
+group.livingroom:
  order: 2
 group.kitchen:
  order: 3
-group.bureau:
+group.desk:
  order: 4
 group.bathroom:
  order: 5
-group.chambre:
+group.bedroom:
  order: 6
 group.bedroom_2:
  order: 7

@@ -1,0 +1,20 @@
+group.default_vew:
+ order: 1
+group.salon:
+ order: 2
+group.kitchen:
+ order: 3
+group.bureau:
+ order: 4
+group.bathroom:
+ order: 5
+group.chambre:
+ order: 6
+group.bedroom_2:
+ order: 7
+group.health:
+ order: 8
+group.weather:
+ order: 9
+group.systemview:
+ order: 10

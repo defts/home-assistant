@@ -13,4 +13,5 @@ pyozw.sqlite
 secrets.yaml
 zwcfg_0xceea7ae4.xml
 zwscene.xml
-
+html5_push_registrations.conf
+entity_registry.yaml

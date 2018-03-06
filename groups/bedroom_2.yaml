@@ -1,4 +1,7 @@
 bedroom_2:
   name: Bedroom 2
   view: yes
+  entities:
+    - sensor.humidity_158d0002288280
+    - sensor.temperature_158d0002288280
 

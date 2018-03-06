@@ -1,4 +1,7 @@
 kitchen:
   name: Cuisine
   view: yes
+  entities:
+    - sensor.humidity_158d0002272d57
+    - sensor.temperature_158d0002272d57
 

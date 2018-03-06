@@ -10,3 +10,9 @@ sensor.humidity_158d000227cc0b:
   friendly_name: Bedroom Humidity
 sensor.temperature_158d000227cc0b:
   friendly_name: Bedroom Temperature
+sensor.temperature_158d0002271a4a:
+  friendly_name: Bathroom Temperature
+sensor.temperature_158d0002272d57:
+  friendly_name: Kitchen Temperature
+sensor.temperature_158d0002288280:
+  friendly_name: Bedroom 2 Temperature

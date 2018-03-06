@@ -1,4 +1,7 @@
 bathroom:
   name: Salle de bain
   view: yes
+  entities:
+    - sensor.humidity_158d0002271a4a
+    - sensor.temperature_158d0002271a4a
 

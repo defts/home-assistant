@@ -16,3 +16,9 @@ sensor.temperature_158d0002272d57:
   friendly_name: Kitchen Temperature
 sensor.temperature_158d0002288280:
   friendly_name: Bedroom 2 Temperature
+binary_sensor.switch_158d0002135a1d:
+  friendly_name: Xiaomi Switch 1
+binary_sensor.switch_158d0002133dfe:
+  friendly_name: Xiaomi Switch 2
+binary_sensor.switch_158d0002135ac2:
+  friendly_name: Xiaomi Switch 3

@@ -9,6 +9,7 @@ SystemView:
     - group.batteries
     - group.systemmonitor
     - group.speedtest
+    - group.googlewifi
 
 SystemMonitor:
   - sensor.disk_use_percent_
@@ -23,6 +24,14 @@ SystemMonitor:
   - sensor.ipv4_address_eth0
   - sensor.last_boot
     
+GoogleWiFi:
+  - sensor.google_wifi_current_version
+  - sensor.google_wifi_last_restart
+  - sensor.google_wifi_local_ip
+  - sensor.google_wifi_new_version
+  - sensor.google_wifi_status
+  - sensor.google_wifi_uptime
+
 Speedtest:
   - sensor.speedtest_ping
   - sensor.speedtest_download

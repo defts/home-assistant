@@ -1,5 +1,10 @@
 - platform: hue
 
+- platform: google_wifi
+  name: Google WiFi
+  host: !secret ip_google_wifi_livingroom
+
+
 - platform: speedtest
   minute:
     - 0

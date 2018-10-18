@@ -4,4 +4,5 @@ bathroom:
   entities:
     - sensor.humidity_158d0002271a4a
     - sensor.temperature_158d0002271a4a
+    - switch.switch_heating_bathroom_switch
 

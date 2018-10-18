@@ -1,0 +1,3 @@
+media_player:
+- host: !secret ip_google_chromecast
+- host: !secret ip_google_home

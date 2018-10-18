@@ -1,0 +1,5 @@
+switches:
+  name: Interrupteurs
+  entities:
+    - switch.switch_heating_bathroom_switch
+

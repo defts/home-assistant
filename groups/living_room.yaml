@@ -19,5 +19,4 @@ livingroom:
     - sensor.total_power_livingroom
     - sensor.living_room_thermostat_humidity
     - sensor.living_room_thermostat_temperature
-    - switch.switch_home_cinema_switch
 

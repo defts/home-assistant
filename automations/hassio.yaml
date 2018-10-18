@@ -8,6 +8,13 @@
       data:
         title: "Home Assistant"
         message: "Started"
+    - delay: 00:05  # Waits 5 minutes to starting HomeKit (Zwave and Wifi light fully ready)
+    - service: homekit.start
+    - service: notify.notifier
+      data:
+        title: "Home Assistant"
+        message: "homekit Started"
+
 
 - id: notif-hassio-shutdown
   alias: Notification on Hassio Shutdown

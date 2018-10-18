@@ -8,15 +8,15 @@ homeassistant:
   customize: !include_dir_merge_named customizations
 
 # introduction:
-discovery:
-frontend:
+# discovery:
+cloud:
 config:
 conversation:
+frontend:
 history:
 logbook:
 map:
 sun:
-cloud:
 updater:
 
 automation: !include_dir_merge_list automations
@@ -25,9 +25,10 @@ camera: !include camera.yaml
 device_tracker: !include device_tracker.yaml
 group: !include_dir_merge_named groups
 history_graph: !include history_graph.yaml
+homekit: !include homekit.yaml
 http: !include http.yaml
 logger: !include logger.yaml
-media_player: !include media_player.yaml
+cast: !include cast.yaml
 mqtt: !include mqtt.yaml
 notify: !include notify.yaml
 scene: !include_dir_merge_list scenes

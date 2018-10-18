@@ -1,0 +1,68 @@
+- id: eight
+  alias: Automation Dimmer - 1 click
+  trigger:
+    - platform: state
+      entity_id:
+        - sensor.hue_dimmer_switch_1
+      to: "1_click"
+  action:
+    - service: light.turn_on
+      data:
+        entity_id:
+          - light.lampadaire_salon
+          - light.livingroom_light_level
+
+- id: eight
+  alias: Automation Dimmer - 4 click
+  trigger:
+    - platform: state
+      entity_id:
+        - sensor.hue_dimmer_switch_1
+      to: "4_click"
+  action:
+    - service: light.turn_off
+      data:
+        entity_id:
+          - light.lampadaire_salon
+          - light.livingroom_light_level
+
+- id: evelen
+  alias: Automation aqara switch 3
+  trigger:
+    platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.switch_158d0002135ac2
+      click_type: single
+  action:
+    - service: notify.notifier
+      data_template:
+        title: "Home Assistant - aqara switch"
+        message: "switch 3"
+
+- id: ten
+  alias: Automation aqara switch 2
+  trigger:
+    platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.switch_158d0002133dfe
+      click_type: single
+  action:
+    - service: notify.notifier
+      data_template:
+        title: "Home Assistant - aqara switch"
+        message: "switch 2"
+- id: nine
+  alias: Automation aqara switch 1
+  trigger:
+    platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.switch_158d0002135a1d
+      click_type: single
+  action:
+    - service: notify.notifier
+      data_template:
+        title: "Home Assistant - aqara switch"
+        message: "switch 1"

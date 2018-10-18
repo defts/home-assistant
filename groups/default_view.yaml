@@ -3,10 +3,11 @@ default_view:
   name: All
   entities:
     - group.all_automations
-    - group.lights
     - group.covers
     - group.devices
+    - group.lights
     - group.scenes
+    - group.switches
     - history_graph.temperatures
     - sensor.total_power_home
 

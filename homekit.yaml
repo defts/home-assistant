@@ -1,0 +1,25 @@
+auto_start: False
+filter:
+  include_entities:
+    - light.boule
+    - light.lampe_bureau
+    - light.lampadaire_salon
+    - light.livingroom_light_level
+    - cover.volet_bureau_level
+    - cover.volet_salon_level
+    - switch.switch_heating_bathroom_switch
+entity_config:
+  light.boule:
+    name: Boule
+  light.lampe_bureau:
+    name: Lampe bureau
+  light.lampadaire_salon:
+    name: Lampadaire salon
+  light.livingroom_light_level:
+    name: Lumiere salle a manger
+  cover.volet_bureau_level:
+    name: volet bureau
+  cover.volet_salon_level:
+    name: volet salon
+  switch.switch_heating_bathroom_switch:
+    name: interrupteur chauffage sbd

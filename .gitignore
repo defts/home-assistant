@@ -16,3 +16,6 @@ zwscene.xml
 html5_push_registrations.conf
 entity_registry.yaml
 .config_entries.json
+.homekit.state
+.ios.conf
+

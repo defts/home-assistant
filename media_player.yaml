@@ -1,2 +1,0 @@
-- platform: cast
-  host: !secret ip_google_chromecast

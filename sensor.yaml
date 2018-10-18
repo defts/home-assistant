@@ -1,4 +1,4 @@
-- platform: hue
+# - platform: hue
 
 - platform: google_wifi
   name: Google WiFi
@@ -433,7 +433,6 @@
     total_power_livingroom:
       friendly_name: 'Living room power'
       value_template: '{{ ((states.sensor.volet_salon_power.attributes.power_consumption | float) + 
-      (states.sensor.switch_home_cinema_power.attributes.power_consumption | float) +
       (states.sensor.livingroom_light_power.attributes.power_consumption | float)) }}'
       unit_of_measurement: 'W'
     total_power_desk:

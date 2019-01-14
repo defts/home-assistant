@@ -1,9 +1,12 @@
 # - platform: hue
 
 - platform: google_wifi
-  name: Google WiFi
+  name: google wifi
   host: !secret ip_google_wifi_livingroom
 
+- platform: linky
+  username: !secret linky_username
+  password: !secret linky_password
 
 - platform: speedtest
   minute:

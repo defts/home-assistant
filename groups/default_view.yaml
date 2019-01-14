@@ -4,7 +4,6 @@ default_view:
   entities:
     - group.all_automations
     - group.covers
-    - group.devices
     - group.lights
     - group.scenes
     - group.switches

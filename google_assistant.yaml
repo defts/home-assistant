@@ -1,7 +1,38 @@
 project_id: !secret ga_project_id
 api_key: !secret ga_api_key
-exposed_domains:
-  - switch
-  - light
-  - cover
+expose_by_default: false
+entity_config:
+  # Desk
+  cover.volet_bureau_level:
+    name: Volet
+    room: Bureau
+    expose: true
+  light.lampe_bureau:
+    name: Lumière
+    room: Bureau
+    expose: true
+  # Bedroom
+  light.boule:
+    name: Hue Go
+    room: Chambre
+    expose: true
+  # Bathroom
+  switch.switch_heating_bathroom_switch:
+    name: Chauffage
+    room: Salle de bain
+    expose: true
+  # Dining room
+  light.livingroom_light_level:
+    name: Lumière
+    room: Salle à manger
+    expose: true
+  # Livingroom
+  cover.volet_salon_level:
+    name: Volet
+    room: Salon
+    expose: true
+  light.lampadaire_salon:
+    name: Lumière
+    room: Salon
+    expose: true
 
